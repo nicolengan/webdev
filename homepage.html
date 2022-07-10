@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="homepage.css">
+    <script type="text/javascript">
+    function alertText(text){
+      alert("Elmo has" + " " + text + "!")
+    }
+    function changeElmo(theImg) {
+      document.getElementById('elmo').setAttribute('src', theImg);
+    }
+    function resetElmo(){
+      var x = document.getElementById('elmo').src
+      if (x === 'file:///D:/USER/Desktop/Webdev/photos//elmo.png'){
+      alert("Elmo is already naked!")}
+      else {
+      document.getElementById('elmo').setAttribute('src', 'photos//elmo.png' );
+    }}
+    </script>
+  </head>
+  <body>
+    <header>
+      <span id="title">Dress me Elmo</span><br>
+      <nav>
+          <a href="" class="button text-decoration-none" id="home">Home</a>
+          <a href="about.html" class="button text-decoration-none" id="about">About</a>
+          <a href="game.html" class="button text-decoration-none" id="game">Game</a>
+          <a href="gallery.html" class="button text-decoration-none" id= "gallery">Gallery</a>
+          <a href="contact.html" class="button text-decoration-none" id="contact">Contact us</a>
+    </nav>
+    <hr>
+  </header>
+
+  <div>
+    <img src="photos/elmo.png" alt="Elmo" id="elmo"></img>
+    <p class="acessories">
+      <button type="button" id="reset" onclick="resetElmo()">Reset elmo!</button>
+      <img src="photos/boots.png" class="acessories" onclick="changeElmo('photos\\elmoboots.png');alertText('boots')"/>
+      <span class="customText">Give elmo boots!</span>
+
+      <img src="photos/elmohat_icon.png" class="acessories" onclick="changeElmo('photos\\elmohat.png');alertText('a&nbsp;hat')"/>
+      <span class="customText">Give elmo a hat!</span>
+
+      <img src="photos/elmotounge_icon.png" class="acessories" onclick="changeElmo('photos\\elmotounge.png');alertText('a&nbsp;tounge')"/>
+      <span class="customText">Give elmo a tounge!</span>
+
+      <img src="photos/elmopinknose_icon.png" class="acessories" onclick="changeElmo('photos\\elmopinknose.png');alertText('a&nbsp;pink&nbsp;nose')"/>
+      <span class="customText">Give elmo a pink nose!</span>
+
+      <img src="photos/elmosunglasses_icon.png" class="acessories" onclick="changeElmo('photos\\elmosunglasses.png');alertText('sunglasses')"/>
+      <span class="customText">Give elmo sunglasses! </span>
+    </p>
+  </div>
+  </body>
+</html>

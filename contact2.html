@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <span id="title">Dress me Elmo</span><br>
+      <nav>
+          <a href="homepage.html" class="button text-decoration-none" id="home">Home</a>
+          <a href="about.html" class="button text-decoration-none" id="about">About</a>
+          <a href="game.html" class="button text-decoration-none" id="game">Game</a>
+          <a href="gallery.html" class="button text-decoration-none" id="gallery">Gallery</a>
+          <a href="" class="button text-decoration-none" id="contact">Contact us</a>
+    </nav>
+    <hr>
+  </header>
+    <h5 style="margin-top: 20px;">Thank you&nbsp;<span id="firstName1"></span>&nbsp;<span id="lastName1"></span>! Your input has been received.</h5>
+    <form action="homepage.html">
+      <input style="
+        margin-bottom: 10px;
+        background-color: #D61B29;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+      "type="submit" value="Go back to home!" />
+    </form>
+    <script type="text/javascript">
+      document.getElementById("firstName1").innerHTML = localStorage.getItem("firstName")
+      document.getElementById("lastName1").innerHTML = localStorage.getItem("lastName")
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+div{
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.babyDavid {
+  float: left;
+  width: 20%;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  color: grey;
+  font-style: italic;
+}
+.aboutElmo {
+  float: left;
+  width: 40%;
+  font-size: 100%;
+  text-align: left;
+}
+.aboutElmoHeader{
+  float: left;
+  font-size: 200%;
+  width: 100%;
+  text-align: left;
+  text-decoration: underline;
+  font-weight: bold;
+}
+div ul{
+  float: left;
+  width: 45%;
+  font-size: 100%;
+  text-align: left;
+  margin-left: 20px;
+  list-style-image: url(photos/elmo_icon.png);
+}
+span.desc{
+  color: grey;
+}
+table{
+  float: left;
+  caption-side: top;
+}
+caption {
+  color: black;
+  font-size: 150%;
+  font-weight: bold;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td, td{
+  padding: 12.5px;
+}

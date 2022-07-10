@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript">
+      function storeForm() {
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        var comment = document.getElementById("comment").value;
+        localStorage.setItem("firstName", firstName);
+        localStorage.setItem("lastName", lastName);
+        localStorage.setItem("comment", comments);
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <span id="title">Dress me Elmo</span><br>
+      <nav>
+          <a href="homepage.html" class="button text-decoration-none" id="home">Home</a>
+          <a href="about.html" class="button text-decoration-none" id="about">About</a>
+          <a href="game.html" class="button text-decoration-none" id="game">Game</a>
+          <a href="gallery.html" class="button text-decoration-none" id="gallery">Gallery</a>
+          <a href="" class="button text-decoration-none" id="contact">Contact us</a>
+    </nav>
+    <hr>
+  </header>
+  <div class="form">
+  <h3>Contact us!</h3>
+  <p><span id="display"></span></p>
+  <div class="input-group mb-3">
+  <form method="get" action="contact2.html">
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstName" required>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastName" required>
+      </div></div>
+      <div class="row">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+  </div>
+    <div class="row">
+      <label for="comment" class="form-label" id="comment">Comments:</label>
+    <textarea name="comment" class="form-control" form="usrform" required></textarea><br>
+        </div>
+    <input type="submit" class="btn btn-light" value="Submit!" onclick="storeForm()">
+  </body>
+</html>

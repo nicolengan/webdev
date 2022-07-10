@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="gallery.css">
+    <script type="text/javascript">
+      function expandImg(elmoImg) {
+        bigImg.src = elmoImg.src;
+        imgtext.innerHTML = elmoImg.alt;
+      }
+    </script>
+  </head>
+  <header>
+  <body>
+      <span id="title">Dress me Elmo</span><br>
+      <nav>
+        <a href="homepage.html" class="button text-decoration-none" id="home">Home</a>
+        <a href="about.html" class="button text-decoration-none" id="about">About</a>
+        <a href="game.html" class="button text-decoration-none" id="game">Game</a>
+        <a href="" class="button text-decoration-none" id="gallery">Gallery</a>
+        <a href="contact.html" class="button text-decoration-none" id="contact">Contact us</a>
+    </nav>
+    <hr>
+  </header>
+  <div class="imgRow">
+    <div class="column">
+      <img src="photos/dorothyfish.jpg" class="img-fluid" alt="Elmo's pet fish!" onclick="expandImg(this)"/>
+    </div>
+    <div class="column">
+      <img src="photos/elmofamily.jpg"class="img-fluid" alt="Elmo's family!" onclick="expandImg(this)"/>
+    </div>
+    <div class="column">
+      <img src="photos/elmohost.jpg" class="img-fluid" alt="Elmo on TV!" onclick="expandImg(this)"/>
+    </div>
+    <div class="column">
+      <img src="photos/elmopiano.jpg" class="img-fluid" alt="Elmo playing the piano!" onclick="expandImg(this)"/>
+    </div>
+    <div class="column">
+      <img src="photos/elmorat.jpg" class="img-fluid" alt="Elmo as a rat!" onclick="expandImg(this)"/>
+    </div>
+    <div class="column">
+      <img src="photos/elmorock.jpg" class="img-fluid" alt="Elmo as a rock!" onclick="expandImg(this)"/>
+    </div>
+  </div>
+  <div class="container">
+    <div id="imgtext"></div>
+    <img id="bigImg" class="img-fluid" style="width:100%">
+</div>
+  </body>
+</html>

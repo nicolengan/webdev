@@ -1,0 +1,16 @@
+.column{
+  float: right;
+  width: 16%;
+  padding: 10px;
+}
+div.imgRow{
+  padding-right: 50px;
+}
+div#imgtext{
+  padding: 20px;
+  font-size: 150%;
+}
+div.column img:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
